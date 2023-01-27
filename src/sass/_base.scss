@@ -1,0 +1,22 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f2f2f2;
+}
+i,
+span {
+  display: inline-block;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
