@@ -6,19 +6,75 @@
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-
+.crop {
+  width: 43px;
+  height: 43px;
+  overflow: hidden;
+}
 .sidebar {
   min-width: 15.625rem;
   max-width: 15.625rem;
+  padding: 0.8em 0.8em;
   background: #fff;
   color: $grey;
   font-size: 0.8125em;
   border: 1px solid #d7d7d7;
-  transition: all 0.3s;
+  transition: all 0.7s;
   &.active {
     min-width: 3.9375rem;
     max-width: 3.9375rem;
     text-align: center;
+    transition: all 0.7s;
+    .sidebar__header {
+      &__logo {
+        margin: 0px 100px 0 0px;
+      }
+    }
+    .sidebar__menu {
+      margin: 1.875em 0px;
+      p {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        color: transparent;
+      }
+      &__link {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+  &__menu {
+    margin: 1.875em 24px;
+    transition: all 0.7s;
+    p {
+      margin-top: 2em;
+      margin-left: -0.5em;
+      color: $grey-light;
+      font-weight: 500;
+    }
+    &__link {
+      margin: 0.1em;
+      padding: 0.7em;
+      border-radius: 5px;
+      &--active {
+        font-weight: 500;
+        background: $info;
+        color: #fff;
+      }
+      a {
+        text-align: left;
+        display: flex;
+        flex-wrap: nowrap;
+        img {
+          font-size: 1.5em;
+        }
+        span {
+          margin-left: 0.5em;
+          white-space: nowrap;
+          overflow-x: hidden;
+        }
+      }
+    }
   }
 }
 
@@ -74,6 +130,7 @@
   border-radius: 0;
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.15);
   &__btn {
+    margin-left: 1em;
     color: lighten($grey, 50);
     &:hover {
       color: darken($grey, 20);
@@ -83,8 +140,9 @@
     }
   }
   &__title {
+    color: $dark;
     font-weight: 500;
     font-size: 1.15em;
-    margin-left: 1.1em;
+    margin-left: 1em;
   }
 }
