@@ -28,3 +28,11 @@
     }
   }
 }
+
+@media (max-width: $screen-xxs-max) {
+  .user {
+    &.nav-item {
+      margin-right: 0.3em;
+    }
+  }
+}
