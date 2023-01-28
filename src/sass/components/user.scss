@@ -1,0 +1,30 @@
+.user {
+  &.nav-item {
+    margin-right: 1.5625em;
+    .nav-link span {
+      margin-left: 0.5em;
+      font-size: 0.8125em;
+      font-weight: 500;
+    }
+  }
+  .dropdown-menu.dropdown-menu-right {
+    p {
+      margin-bottom: 0.2em;
+      font-weight: 600;
+      &:nth-child(2) {
+        font-weight: 400;
+        color: #adadad;
+      }
+    }
+    font-size: 0.74em;
+    .dropdown-item {
+      span {
+        color: $dark;
+        font-size: 1.1em;
+      }
+      img {
+        color: $grey-light-2;
+      }
+    }
+  }
+}

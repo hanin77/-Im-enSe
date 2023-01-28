@@ -49,7 +49,7 @@
     p {
       margin-top: 2em;
       margin-left: -0.5em;
-      color: $grey-light;
+      color: $grey-light-3;
       font-weight: 500;
     }
     &__link {
@@ -144,5 +144,34 @@
     font-weight: 500;
     font-size: 1.15em;
     margin-left: 1em;
+  }
+  &-nav {
+    background: #fff;
+  }
+  .nav-item {
+    margin-right: 1em;
+    color: $grey-light-3;
+    .dropdown-menu {
+      .dropdown-item {
+        &.active {
+          background: transparent;
+          span {
+            color: $dark;
+          }
+        }
+        & span {
+          margin-left: 0.5em;
+          font-size: 0.8125em;
+          color: #adadad;
+        }
+      }
+    }
+  }
+  .nav-link {
+    img {
+      span {
+        white-space: nowrap;
+      }
+    }
   }
 }
