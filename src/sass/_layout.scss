@@ -83,10 +83,13 @@
 ----------------------------------------------------- */
 
 .content {
-  width: 100%;
+  width: calc(100% - 15.625rem);
+  transition: all 0.7s;
+  &.active {
+    width: calc(100% - 3.9375rem);
+  }
   padding: 0px;
   min-height: 100vh;
-  transition: all 0.3s;
   .sites {
     color: #adadad;
     height: 2.25rem;
@@ -131,9 +134,15 @@
       }
     }
   }
-  main {
-    margin-top: 3.75rem;
-    margin-left: 3.75rem; //4.125rem;
+  .main {
+    margin-top: 1.6875rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    &__title {
+      font-size: 1em;
+      font-weight: $font-weight-medium;
+      color: $dark;
+    }
   }
 }
 /* ---------------------------------------------------
