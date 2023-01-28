@@ -1,0 +1,28 @@
+.worker {
+  display: flex;
+  flex-direction: row;
+  &__name {
+    margin-bottom: 0em;
+    font-family: "roboto";
+    font-size: 0.75em;
+    font-weight: $font-weight-regular;
+    color: #484848;
+    white-space: nowrap;
+  }
+  &__job-title {
+    margin-bottom: 0em;
+    text-align: left;
+    font-family: "roboto";
+    font-size: 0.75em;
+    color: #909090;
+    white-space: nowrap;
+  }
+  .avatar {
+    width: 2.125em;
+    height: 2.125em;
+  }
+  .company {
+    width: 2.5em;
+    height: 2.5em;
+  }
+}

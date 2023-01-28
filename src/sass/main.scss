@@ -1,7 +1,10 @@
+@import "variables";
 @import "~bootstrap/scss/bootstrap";
 
 @import "fonts";
-@import "variables";
+
 @import "base";
 @import "layout";
 @import "./components/user.scss";
+@import "./components/table.scss";
+@import "./components/worker.scss";

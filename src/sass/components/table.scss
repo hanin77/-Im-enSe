@@ -1,0 +1,62 @@
+table {
+  &.violations-table {
+    background: #fff;
+    thead {
+      th {
+        text-align: center;
+        vertical-align: middle;
+        &:nth-child(2) {
+          .col-title {
+            font-size: 0.75em;
+            font-weight: $font-weight-semibold;
+          }
+        }
+        &:nth-child(-n + 2) {
+          border-right: 1px solid #d8d8d8;
+        }
+        .col-img {
+          width: 90px;
+          height: 90px;
+        }
+        .col-title {
+          margin-bottom: 0em;
+          font-family: "Lato";
+          font-style: normal;
+          font-size: 0.6875em;
+          font-weight: $font-weight-regular;
+          color: #737373;
+        }
+      }
+    }
+    tbody {
+      tr {
+        th {
+          color: #909090;
+          font-family: "roboto";
+          font-size: 0.75em;
+          font-weight: $font-weight-medium;
+          text-align: center;
+          vertical-align: middle;
+          border-right: 1px solid #d8d8d8;
+        }
+        td {
+          font-weight: $font-weight-semibold;
+          font-size: 0.875em;
+          text-align: center;
+          vertical-align: middle;
+        }
+      }
+      & td:nth-child(-n + 2) {
+        border-right: 1px solid #d8d8d8;
+      }
+    }
+  }
+  .disc {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25em;
+    height: 2.25em;
+    border-radius: 50% 50%;
+  }
+}
